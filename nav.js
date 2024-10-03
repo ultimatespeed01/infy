@@ -19,9 +19,9 @@ function loadNavbar() {
         <span></span>
         <span></span>
         <ul id="menu">
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Service</li></a>
-          <a href="#"><li>Contact</li></a>
+          <a href="index.html"><li>Home</li></a>
+          <a href="service.html"><li>Service</li></a>
+          <a href="contact"><li>Contact</li></a>
         </ul>
       </div>
     </nav>

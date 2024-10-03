@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <title>INFY - Our Services</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #fff;
+            overflow-x: hidden;  /* This prevents horizontal scrolling */
+
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .cta-button {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .menu-icon {
+            font-size: 24px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            line-height: 1.4;
+        }
+        .services-list {
+            margin-top: 60px;
+        }
+        .service-item {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .service-item:last-child {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .service-item h2 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+        .expand-icon {
+            font-size: 24px;
+            color:  #DB5BFF;
+        }
+        .service-details {
+            display: none;
+            padding: 10px 0;
+            color: #ddd;
+            font-size: 18px;
+        }
+        .tools-section {
+            margin-top: 60px;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+        }
+        .footer-logo {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer-nav {
+            margin-top: 20px;
+        }
+        .footer-nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="navbar-container"></div>
+
+        <header>
+            <div class="logo">Infy</div>
+            <a href="#" class="cta-button">Book a free call</a>
+        </header>
+        <main>
+            <h1>At INFY, we transform chaos into order, offering top-notch branding and marketing services tailored to your unique needs.</h1>
+            <div class="services-list">
+                <h3>Our expertise</h3>
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Website Design and Development</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details"> We create visually stunning, responsive websites tailored to your business needs. From concept to launch, we ensure seamless functionality and user experience.</div>
+                
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>SEO</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details">Boost your search engine rankings with our expert SEO strategies, driving organic traffic to your website and enhancing online visibility.</div>
+                
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Social Media Marketing</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details">Elevate your brand's social media presence with targeted campaigns that engage your audience and foster long-term relationships.
+                </div>
+                
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Influencer Marketing</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details"> Leverage the power of influencers to amplify your brand's message and reach a wider, highly engaged audience.</div>
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Graphic Design</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details"> Our creative team delivers eye-catching designs that communicate your brand's story across digital and print platforms.</div>
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Influencer Marketing</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details"> Leverage the power of influencers to amplify your brand's message and reach a wider, highly engaged audience.</div>
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Graphic Design</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details"> Our creative team delivers eye-catching designs that communicate your brand's story across digital and print platforms.</div>
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Email Marketing</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details"> Drive conversions and build customer loyalty with personalized email campaigns designed to inform, engage, and convert.</div>
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Content Creation</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details"> We produce compelling, high-quality content that resonates with your audience and aligns with your brand's voice and values.</div>
+                <div class="service-item" onclick="toggleService(this)">
+                    <h2>Branding</h2>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="service-details"> Establish a strong, memorable brand identity that sets you apart from competitors and connects with your target market.</div>                
+            </div>
+            <div class="service-item" onclick="toggleService(this)">
+                <h2>Data Analysis</h2>
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="service-details"> Transform your business data into actionable insights, helping you make informed decisions and optimize performance.</div>
+            <div class="service-item" onclick="toggleService(this)">
+                <h2>3D Animation</h2>
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="service-details"> Bring your ideas to life with our captivating 3D animations, perfect for marketing, product showcases, or entertainment.</div>
+            
+        </main>
+        
+    </div>
+
+    <script>
+        function toggleService(serviceItem) {
+            const details = serviceItem.nextElementSibling;
+            const icon = serviceItem.querySelector('.expand-icon');
+            
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                icon.textContent = "-";
+            } else {
+                details.style.display = "none";
+                icon.textContent = "+";
+            }
+        }
+    </script>
+        <div id="footer-container"></div>
+
+        <script src="footer-loader.js"></script> <!-- Load the JavaScript file -->
+        <script src="nav.js"></script>
+</body>
+</html>

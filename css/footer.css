@@ -1,0 +1,106 @@
+/* Footer Styles */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 4rem 0; /* 16 */
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px; /* You can adjust this width as needed */
+  margin: 0 auto;
+  padding: 0 1rem; /* 4 */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default for mobile */
+  gap: 3rem; /* 12 */
+}
+
+/* Media Queries for responsive design */
+@media (min-width: 768px) { /* md */
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Navigation Links */
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-link {
+  font-size: 1.5rem; /* 2xl */
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: gray; /* hover:text-gray-300 */
+}
+
+/* Studio Information */
+.studio-title,
+.contact-title,
+.email-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.studio-location {
+  color: gray; /* text-gray-400 */
+}
+
+/* Contact Information */
+.contact-link,
+.email-link {
+  color: gray; /* text-gray-400 */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-link:hover,
+.email-link:hover {
+  color: white; /* hover:text-white */
+}
+
+/* Bottom Section */
+.bottom-section {
+  margin-top: 4rem; /* mt-16 */
+  padding-top: 2rem; /* pt-8 */
+  border-top: 1px solid gray; /* border-t border-gray-800 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem; /* space-x-4 */
+  margin-bottom: 1rem; /* mb-4 md:mb-0 */
+}
+
+.social-link {
+  color: white; /* text-white */
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: gray; /* hover:text-gray-300 */
+}
+
+/* Copyright */
+.copyright {
+  color: gray; /* text-gray-400 */
+}

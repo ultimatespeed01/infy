@@ -22,6 +22,8 @@ body {
     max-width: 1200px;
 }
 
+
+
 /* Header styles */
 header {
     margin-bottom: 48px;
@@ -30,8 +32,7 @@ header {
 h1 {
     font-size: 2.25rem;
     margin-left: 8px;
-    margin-top: 64px;
-    margin-bottom: 40px;
+    margin-top: 64px;  
     font-weight: bold;
 }
 
@@ -272,6 +273,11 @@ header p {
     justify-content: center;
 }
 
+.mission-vision {
+    background-color: white;
+}
+
+
 /* Vision section */
 .vision-section {
     margin-top: 64px;
@@ -399,6 +405,11 @@ body {
     height: auto;
     display: block;
 }
+
+.mission-text p{
+    color: #111827;
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {

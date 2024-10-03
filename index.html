@@ -4,228 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Design & Innovation for Impactful Growth</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;  /* This prevents horizontal scrolling */
-}
-* {
-    max-width: 100vw;
-    box-sizing: border-box;
-}
-
-    </style>
-        <style>
-            .service-card:hover .card-description {
-                display: block;
-            }
-            .video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1;
-            object-fit: cover;
-            opacity: 30%;
-        }
-        </style>
 </head>
-<body class="bg-black text-white">
-<br>
+<body>
     <div id="navbar-container"></div>
     <video autoplay loop muted class="video-background">
         <source src="images/background.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <div class="container mx-auto px-4 py-12">
-        <header class="mb-12">
-            <h1 class="text-4xl ml-2 mt-16 my-10 md:text-6xl font-bold mb-4">We grow brands, create experiences & solve business problems</h1>
-            <p class="text-sm md:text-base text-gray-400 max-w-2xl">
-                A strong brand needs a strong purpose. We're here to uncover your.            </p>
+    
+    <div class="container">
+        <header>
+            <h1>We grow brands,</h1>
+            <h2> create experiences & solve business problems</h2>
+            <p>A strong brand needs a strong purpose. We're here to uncover yours.</p>
         </header>
         
-        <main class="mb-12">
-            <div class="flex flex-wrap gap-4">
-                <button class="bg-purple-700 text-white px-6 py-3 rounded-full flex items-center">
-                    WHAT WE DO
-                </button>
-                <button class="bg-gray-800 text-white px-6 py-3 rounded-full flex items-center">
-                    DISCUSS A PROJECT
-                </button>
+        <main>
+            <div class="button-container">
+                <button class="button button-primary">WHAT WE DO</button>
+                <button class="button button-secondary">DISCUSS A PROJECT</button>
             </div>
         </main>
-        <div class="mb-16">       
-            <p class="mb-16"><br></p>
-            <p class="mb-16"><br></p>
-        
-        </div>
-        <section class="bg-white w-screen px-36 py-16 flex flex-col md:flex-row items-start">
-            <div class="w-full md:w-1/2 pr-0 md:pr-12 mb-8 md:mb-0">
-                <div class="flex items-center mb-6">
-                    <div>
-                        <h2 class="text-2xl font-bold text-gray-600">Infy</h2>
-                        <p class="text-sm text-gray-600">studios</p>
-                    </div>
-                </div>
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-600">Discover<br>Our Studio</h1>
-                <p class="text-gray-600 mb-6 ">
-                    At INFY DIGI SOLUTIONS, we are more than just a digital marketing agency — we are storytellers, innovators, and strategists. Our mission is to help brands thrive in an ever-evolving digital landscape by creating meaningful connections between businesses and their audiences.
-                </p>
-                <p class="text-gray-600">
-                    With a team of passionate experts specializing in SEO, social media marketing, content creation, PPC, and web design, we develop tailored strategies that drive measurable results. We believe in the power of data-driven insights combined with creative excellence to elevate your brand, amplify your message, and boost your growth.
-                </p>
-                <p class="text-gray-600">
-                    Whether you're looking to build a compelling online presence or need cutting-edge digital solutions, INFY DIGI SOLUTIONS is here to turn your vision into a reality. Let’s craft your success story together.
-                </p>
-            </div>
-            <div class="w-full md:w-1/2">
-                <img src="images/bulb.png" alt="Kaleido Studios Workspace" class="w-full h-auto rounded-lg shadow-lg">
-            </div>
-        </section>
-        
-
-        <div class="bg-black text-white p-8 md:p-16">
-            <div class="max-w-7x8 mx-auto text-center">
-              <div class="flex flex-col md:flex-row items-center mb-16 gap-8">
-                <div class="w-24 h-24 rounded-full overflow-hidden">
-                  <img src="/api/placeholder/96/96" alt="Colorful eye" class="w-full h-full object-cover">
-                </div>
-                <div>
-                  <h1 class="text-4xl md:text-6xl font-light mb-2">
-                    Distinctive <span class="font-normal">Solutions</span>
-                  </h1>
-                  <h2 class="text-4xl md:text-6xl font-light">
-                    For Your <span class="font-normal">Business.</span>
-                  </h2>
-                </div>
-              </div>
-          
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="service-card bg-black p-6 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-900 cursor-pointer h-[200px] flex flex-col">
-                  <h3 class="text-white text-2xl font-semibold mb-4">Branding and Identity Design</h3>
-                  <p class="card-description text-gray-400 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Create a distinctive visual identity that sets your business apart and resonates with your target audience.</p>
-                </div>
-          
-                <div class="service-card bg-black p-6 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-900 cursor-pointer h-[200px] flex flex-col">
-                  <h3 class="text-white text-2xl font-semibold mb-4">Digital Marketing</h3>
-                  <p class="card-description text-gray-400 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Develop effective strategies to reach and engage your customers across various digital platforms.</p>
-                </div>
-          
-                <div class="service-card bg-black p-6 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-900 cursor-pointer h-[200px] flex flex-col">
-                  <h3 class="text-white text-2xl font-semibold mb-4">UI/UX Design</h3>
-                  <p class="card-description text-gray-400 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Craft intuitive and engaging user experiences that delight your customers and drive results.</p>
-                </div>
-          
-                <div class="service-card bg-black p-6 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-900 cursor-pointer h-[200px] flex flex-col">
-                  <h3 class="text-white text-2xl font-semibold mb-4">Web & Mobile App Development</h3>
-                  <p class="card-description text-gray-400 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Build powerful, scalable applications that bring your business vision to life.</p>
-                </div>
-              </div>
-          
-              <div class="mt-12 flex justify-center">
-                <button class="bg-purple-700 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-purple-600 transition-colors duration-300 flex items-center">
-                  WHAT WE DO
-                </button>
-              </div>
-            </div>
-          </div>
-        <div class="container mx-auto px-4 py-16">
-            <div class="w-24 h-24 rounded-full overflow-hidden">
-                <img src="images/eye.jpg" alt="Colorful eye" class="w-full h-full object-cover">
-            </div>
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <!-- Text Content -->
-                <div class="lg:w-1/2">
-                    <h1 class="text-5xl font-bold mb-8">Vision</h1>
-                    
-                    <p class="text-gray-600 mb-8">
-                        To empower businesses by transforming their digital presence through innovative and tailored marketing strategies. We envision a future where every brand, regardless of size, has the tools and guidance to thrive in the digital ecosystem, creating lasting connections with their audiences.                    </p>
-                        <h1 class="text-5xl font-bold mb-8">Creatives!</h1>
-
-                    <p class="text-gray-600 mb-12">
-                        At INFY DIGI SOLUTIONS, our mission is to provide businesses with personalized digital marketing solutions that drive growth, enhance visibility, and foster engagement. Through data-driven strategies, cutting-edge technology, and a customer-first approach, we aim to deliver measurable results that elevate our clients' brands and help them achieve their goals in an ever-evolving digital landscape.                    </p>
-                    
-                    <button class="bg-purple-700 text-white px-8 py-4 rounded-full flex items-center hover:bg-purple-600 transition-all duration-300">
-                        DROP A MESSAGE
-                    </button>
-                    
-                    <div class="mt-12">
-                        <p class="text-xl">
-                            This is us, <span class="font-bold">delivering</span><br>
-                            exceptional <span class="font-bold">results.</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Image -->
-                <div class="lg:w-1/2">
-                    <img src="images/bulb2.jpg" alt="Creative professional in panda mask on skateboard" class="w-full rounded-lg shadow-xl">
-                </div>
-            </div>
-        </div>
-        <footer class="bg-black text-white py-16">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    <!-- Navigation Links -->
-                    <div>
-                        <nav>
-                            <ul class="space-y-4">
-                                <li><a href="#" class="text-2xl hover:text-gray-300 transition-colors">Home</a></li>
-                                <li><a href="#" class="text-2xl hover:text-gray-300 transition-colors">Services</a></li>
-                                <li><a href="#" class="text-2xl hover:text-gray-300 transition-colors">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-    
-                    <!-- Studio Information -->
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Studio</h3>
-                        <p class="text-gray-400">
-                            Bengaluru, Karnataka 560010
-                        </p>
-                    </div>
-    
-                    <!-- Contact Information -->
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Call/Whatsapp</h3>
-                        <a href="tel:+919731567610" class="text-gray-400 hover:text-white transition-colors">1234567</a>
-                    </div>
-    
-                    <!-- Email -->
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Email</h3>
-                        <a href="mailto:hello@kaleidostudios.in" class="text-gray-400 hover:text-white transition-colors">nazim@gmail.com</a>
-                    </div>
-                </div>
-    
-                <!-- Bottom Section -->
-                <div class="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-                    <!-- Social Icons -->
-                    <div class="flex space-x-4 mb-4 md:mb-0">
-                        <a href="#" class="text-white hover:text-gray-300 transition-colors">
-                            <i class="fab fa-instagram text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-white hover:text-gray-300 transition-colors">
-                            <i class="fab fa-linkedin text-2xl"></i>
-                        </a>
-                    </div>
-    
-                    <!-- Copyright -->
-                    <div class="text-gray-400">
-                        © 2024 Infy Studios. All Rights Reserved.
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
-    
-    <script src="nav.js"></script>
 
+    <section class="studio-section">
+        <div class="studio-content">
+            <div class="studio-logo">
+                <div>
+                    <h2>Infy</h2>
+                    <p>studios</p>
+                </div>
+            </div>
+            <h1 class="studio-heading">Discover<br>Our Studio</h1>
+            <p class="studio-text">
+                At INFY DIGI SOLUTIONS, we are more than just a digital marketing agency — we are storytellers, innovators, and strategists. Our mission is to help brands thrive in an ever-evolving digital landscape by creating meaningful connections between businesses and their audiences.
+            </p>
+            <p class="studio-text">
+                With a team of passionate experts specializing in SEO, social media marketing, content creation, PPC, and web design, we develop tailored strategies that drive measurable results. We believe in the power of data-driven insights combined with creative excellence to elevate your brand, amplify your message, and boost your growth.
+            </p>
+            <p class="studio-text">
+                Whether you're looking to build a compelling online presence or need cutting-edge digital solutions, INFY DIGI SOLUTIONS is here to turn your vision into a reality. Let's craft your success story together.
+            </p>
+        </div>
+        <div class="studio-image">
+            <img src="images/bulb.png" alt="Kaleido Studios Workspace">
+        </div>
+    </section>
+
+    <div class="services-section">
+        <div class="services-header">
+            <div class="services-icon">
+                <img src="images/eye.jpg" alt="Colorful eye">
+            </div>
+            <div>
+                <h1 class="services-title">
+                    Distinctive <span>Solutions</span><br>
+                    For Your <span>Business.</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Branding and Identity Design</h3>
+                <p class="card-description">Create a distinctive visual identity that sets your business apart and resonates with your target audience.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Digital Marketing</h3>
+                <p class="card-description">Develop effective strategies to reach and engage your customers across various digital platforms.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p class="card-description">Craft intuitive and engaging user experiences that delight your customers and drive results.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Web & Mobile App Development</h3>
+                <p class="card-description">Build powerful, scalable applications that bring your business vision to life.</p>
+            </div>
+        </div>
+
+        <div class="services-button-container">
+            <button class="button button-primary">WHAT WE DO</button>
+        </div>
+    </div>
+
+    <section class="mission-vision">
+        <div class="container">
+            <div class="vision-section">
+                <div class="statue-image">
+                    <img src="images/vision.jpeg" alt="Classical statue with binoculars">
+                </div>
+                <div class="vision-text">
+                    <p>To become a leading digital marketing agency, empowering businesses worldwide by delivering innovative and data-driven solutions that foster growth, enhance brand visibility, and create lasting impact in the digital space.</p>
+                </div>
+            </div>
+            
+            <div class="mission-section">
+                <div class="mission-text">
+                    <p>At Infy Digi Solutions, our mission is to provide customized, creative, and results-oriented digital marketing strategies that help businesses reach their full potential. We strive to deliver measurable success through cutting-edge technology, expert insights, and a commitment to excellence in everything we do.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="images/mission.jpeg" alt="Dynamic figure jumping">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer-container"></div>
+
+    <script src="footer-loader.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
