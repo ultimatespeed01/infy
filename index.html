@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design & Innovation for Impactful Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+        <style>
+            .service-card:hover .card-description {
+                display: block;
+            }
+            .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 30%;
+        }
+        </style>
+</head>
+<body class="bg-black text-white">
+<br>
+    <div id="navbar-container"></div>
+    <video autoplay loop muted class="video-background">
+        <source src="/images/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container mx-auto px-4 py-12">
+        <header class="mb-12">
+            <h1 class="text-4xl ml-2 mt-16 my-10 md:text-6xl font-bold mb-4">Design & Innovation for<br>Impactful Growth</h1>
+            <p class="text-sm md:text-base text-gray-400 max-w-2xl">
+                Step into Kaleido Studios, where boundless creativity meets tangible results. Let's craft your vision into reality and propel your brand to new heights together.
+            </p>
+        </header>
+        
+        <main class="mb-12">
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-purple-700 text-white px-6 py-3 rounded-full flex items-center">
+                    WHAT WE DO
+                </button>
+                <button class="bg-gray-800 text-white px-6 py-3 rounded-full flex items-center">
+                    DISCUSS A PROJECT
+                </button>
+            </div>
+        </main>
+        <section class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-start">
+            <div class="w-full md:w-1/2 pr-0 md:pr-12 mb-8 md:mb-0">
+                <div class="flex items-center mb-6">
+                    <div>
+                        <h2 class="text-2xl font-bold">kaleido</h2>
+                        <p class="text-sm text-gray-600">studios</p>
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Discover<br>Our Studio</h1>
+                <p class="text-gray-600 mb-6">
+                    Within Kaleido Studios, we unite as a talented ensemble fueled by an unyielding dedication to turning concepts into tangible experiences. With our varied backgrounds and extensive skills, we fuse together to craft captivating solutions for our valued clientele.
+                </p>
+                <p class="text-gray-600">
+                    Collaboration forms the cornerstone of our ethos. We revel in the synthesis of distinct viewpoints, cultivating an atmosphere brimming with limitless creativity. Leveraging our combined proficiency, we deliver exceptional outcomes that consistently exceed expectations.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="/images/bulb.png" alt="Kaleido Studios Workspace" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+        </section>
+
+        
+        <div class="bg-black text-white p-8 md:p-16">
+            <div class="max-w-7xl mx-auto">
+                <!-- Header Section -->
+                <div class="flex flex-col md:flex-row items-center mb-16 gap-8">
+                    <div class="w-24 h-24 rounded-full overflow-hidden">
+                        <img src="images/eye.jpg" alt="Colorful eye" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h1 class="text-4xl md:text-6xl font-light mb-2">
+                            Distinctive <span class="font-normal">Solutions</span>
+                        </h1>
+                        <h2 class="text-4xl md:text-6xl font-light">
+                            For Your <span class="font-normal">Business.</span>
+                        </h2>
+                    </div>
+                </div>
+                
+                <!-- Service Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="service-card bg-black p-6 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-900 cursor-pointer">
+                        <h3 class="text-white text-2xl font-semibold mb-4">Branding and Identity Design</h3>
+                        <p class="card-description text-gray-400 hidden">Create a distinctive visual identity that sets your business apart and resonates with your target audience.</p>
+                    </div>
+    
+                    <!-- Card 2 -->
+                    <div class="service-card bg-black p-6 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-900 cursor-pointer">
+                        <h3 class="text-white text-2xl font-semibold mb-4">Digital Marketing</h3>
+                        <p class="card-description text-gray-400 hidden">Develop effective strategies to reach and engage your customers across various digital platforms.</p>
+                    </div>
+    
+                    <!-- Card 3 -->
+                    <div class="service-card bg-black p-6 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-900 cursor-pointer">
+                        <h3 class="text-white text-2xl font-semibold mb-4">UI/UX Design</h3>
+                        <p class="card-description text-gray-400 hidden">Craft intuitive and engaging user experiences that delight your customers and drive results.</p>
+                    </div>
+    
+                    <!-- Card 4 -->
+                    <div class="service-card bg-black p-6 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-900 cursor-pointer">
+                        <h3 class="text-white text-2xl font-semibold mb-4">Web & Mobile App Development</h3>
+                        <p class="card-description text-gray-400 hidden">Build powerful, scalable applications that bring your business vision to life.</p>
+                    </div>
+                </div>
+                
+                <!-- Button -->
+                <div class="mt-12 flex justify-center">
+                    <button class="bg-purple-700 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-purple-600 transition-colors duration-300 flex items-center">
+                        WHAT WE DO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Text Content -->
+                <div class="lg:w-1/2">
+                    <h1 class="text-5xl font-bold mb-8">Calling All<br>Creatives!</h1>
+                    
+                    <p class="text-gray-600 mb-8">
+                        At Kaleido Studios, we're the serious jesters of creativity, juggling ideas like pros and turning them into vibrant realities. With a blend of determination and humor, our diverse team crafts solutions that leave clients dazzled.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-12">
+                        Ready to join the circus? Step into our colorful world where serious work meets playful innovation. If you're up for a wild ride of creativity and commitment, we're waiting to welcome you to the show!
+                    </p>
+                    
+                    <button class="bg-purple-700 text-white px-8 py-4 rounded-full flex items-center hover:bg-purple-600 transition-all duration-300">
+                        DROP A MESSAGE
+                    </button>
+                    
+                    <div class="mt-12">
+                        <p class="text-xl">
+                            This is us, <span class="font-bold">delivering</span><br>
+                            exceptional <span class="font-bold">results.</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="lg:w-1/2">
+                    <img src="images/bulb2.jpg" alt="Creative professional in panda mask on skateboard" class="w-full rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+        <footer class="bg-black text-white py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <!-- Navigation Links -->
+                    <div>
+                        <nav>
+                            <ul class="space-y-4">
+                                <li><a href="#" class="text-2xl hover:text-gray-300 transition-colors">Home</a></li>
+                                <li><a href="#" class="text-2xl hover:text-gray-300 transition-colors">Services</a></li>
+                                <li><a href="#" class="text-2xl hover:text-gray-300 transition-colors">Contact</a></li>
+                                <li><a href="#" class="text-2xl hover:text-gray-300 transition-colors">Blog</a></li>
+                                <li><a href="#" class="text-2xl hover:text-gray-300 transition-colors">Privacy Policy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <!-- Studio Information -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Studio</h3>
+                        <p class="text-gray-400">
+                            40(2Y), 4th floor, 59th Cross Rd, 3rd Block, Rajajinagar, Bengaluru, Karnataka 560010
+                        </p>
+                    </div>
+    
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Call/Whatsapp</h3>
+                        <a href="tel:+919731567610" class="text-gray-400 hover:text-white transition-colors">+91 97315 67610</a>
+                    </div>
+    
+                    <!-- Email -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Email</h3>
+                        <a href="mailto:hello@kaleidostudios.in" class="text-gray-400 hover:text-white transition-colors">hello@kaleidostudios.in</a>
+                    </div>
+                </div>
+    
+                <!-- Bottom Section -->
+                <div class="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                    <!-- Social Icons -->
+                    <div class="flex space-x-4 mb-4 md:mb-0">
+                        <a href="#" class="text-white hover:text-gray-300 transition-colors">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300 transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+    
+                    <!-- Copyright -->
+                    <div class="text-gray-400">
+                        © 2024 Kaleido Studios. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="nav.js"></script>
+
+</body>
+</html>
