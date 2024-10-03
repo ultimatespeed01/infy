@@ -7,9 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="cursor.css">
 </head>
 <body>
-    <div id="navbar-container"></div>
+    <div class="cursor " id="cursor"></div>
+
+    <nav role="navigation">
+        <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo"/></a>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="index.html"><li>Home</li></a>
+              <a href="service.html"><li>Service</li></a>
+              <a href="contact"><li>Contact</li></a>
+            </ul>
+          </div>
+        </nav>
     <video autoplay loop muted class="video-background">
         <source src="images/background.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -24,8 +40,14 @@
         
         <main>
             <div class="button-container">
+                <a href="service.html">
                 <button class="button button-primary">WHAT WE DO</button>
+            </a>
+            <a href="contact.html">
+
                 <button class="button button-secondary">DISCUSS A PROJECT</button>
+            </a>
+
             </div>
         </main>
     </div>
@@ -50,7 +72,7 @@
             </p>
         </div>
         <div class="studio-image">
-            <img src="images/bulb.png" alt="Kaleido Studios Workspace">
+            <img src="images/man.jpg" alt="Kaleido Studios Workspace">
         </div>
     </section>
 
@@ -119,5 +141,81 @@
 
     <script src="footerloader.js"></script
     <script src="nav.js"></script>
+    <script>
+const cursor = document.querySelector('.cursor'); // Ensure you use the correct class name
+
+let cursorPosition = { x: 0, y: 0 }; // Store the current cursor position
+let isMoving = false; // Flag to track cursor movement
+
+// Track mouse movements
+document.addEventListener('mousemove', (e) => {
+    cursorPosition.x = e.pageX; // Update cursor position using pageX
+    cursorPosition.y = e.pageY; // Update cursor position using pageY
+
+    // Create glitter at mouse position
+    createGlitter(e.pageX, e.pageY);
+
+    // Start moving cursor smoothly if not already moving
+    if (!isMoving) {
+        requestAnimationFrame(moveCursor); // Start moving cursor smoothly
+        isMoving = true; // Set moving flag
+    }
+});
+
+// Function to move the cursor smoothly with 50% slow effect
+function moveCursor() {
+    const offsetX = 2; // Offset cursor by 2 pixels
+    const offsetY = 2; // Offset cursor by 2 pixels
+
+    // Get current cursor position
+    const currentCursorX = parseFloat(cursor.style.left) || cursorPosition.x - offsetX;
+    const currentCursorY = parseFloat(cursor.style.top) || cursorPosition.y - offsetY;
+
+    // Calculate the new position with a 50% slowdown
+    const newX = currentCursorX + (cursorPosition.x - currentCursorX) * 0.5;
+    const newY = currentCursorY + (cursorPosition.y - currentCursorY) * 0.5;
+
+    // Apply the transform to move the cursor
+    cursor.style.transform = `translate(${newX - offsetX}px, ${newY - offsetY}px)`;
+
+    // Continue moving if the mouse is still moving
+    if (cursorPosition.x !== 0 && cursorPosition.y !== 0) {
+        requestAnimationFrame(moveCursor); // Request next frame
+    } else {
+        isMoving = false; // Reset moving flag if no movement
+    }
+}
+
+function createGlitter(x, y) {
+    const glitter = document.createElement('div');
+    glitter.className = 'glitter';
+    glitter.style.left = `${x}px`;
+    glitter.style.top = `${y}px`;
+
+    // Randomize size
+    const size = Math.random() * 8 + 5; // Random size between 5px and 13px
+    glitter.style.width = `${size}px`;
+    glitter.style.height = `${size}px`;
+    glitter.style.background = `radial-gradient(circle, rgba(255, 255, 255, 0.7), rgba(255, 215, 0, 0.6))`;
+
+    document.body.appendChild(glitter);
+
+    // Remove glitter from DOM after animation
+    setTimeout(() => {
+        glitter.remove();
+    }, 1000); // Time matches the animation duration
+}
+
+// Change the cursor's background color over time
+setInterval(() => {
+    cursor.style.background = `linear-gradient(45deg, 
+        #${Math.floor(Math.random() * 16777215).toString(16)},
+        #${Math.floor(Math.random() * 16777215).toString(16)},
+        #${Math.floor(Math.random() * 16777215).toString(16)},
+        #${Math.floor(Math.random() * 16777215).toString(16)})`;
+}, 1000);
+
+
+      </script>
 </body>
 </html>
