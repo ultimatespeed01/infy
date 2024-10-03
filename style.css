@@ -31,13 +31,29 @@ header {
 
 h1 {
     font-size: 2.25rem;
-    margin-left: 8px;
+    margin-left: 15px;
     margin-top: 64px;  
     font-weight: bold;
+}
+h2 {
+    font-size: 1.25rem;
+    margin-left: 15px;
+    margin-top: 6px;  
+    font-weight: bold;
+}
+p{
+        font-size: 1.25rem;
+        margin-left: 15px;
+        margin-top: 6px;  
+        font-weight: bold;
+
 }
 
 @media (min-width: 768px) {
     h1 {
+        font-size: 8.75rem;
+    }
+    h2 {
         font-size: 3.75rem;
     }
 }
@@ -75,11 +91,14 @@ header p {
 .button-primary {
     background-color: #7e22ce;
     color: white;
+    margin-left: 25px;
 }
 
 .button-secondary {
     background-color: #1f2937;
     color: white;
+    margin-left: 25px;
+
 }
 
 /* Video background */
@@ -155,14 +174,16 @@ header p {
 @media (min-width: 768px) {
     .studio-image {
         width: 50%;
+        
     }
 }
 
 .studio-image img {
-    width: 100%;
-    height: auto;
+    width: 1000px;
+    height: 800px;
     border-radius: 8px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
 }
 
 /* Services section */
@@ -175,6 +196,7 @@ header p {
 @media (min-width: 768px) {
     .services-section {
         padding: 64px;
+        padding-bottom: 350px;
     }
 }
 
@@ -196,7 +218,7 @@ header p {
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    overflow: hidden;
+    overflow:auto;
 }
 
 .services-title {
@@ -342,8 +364,8 @@ header p {
 
 .vision-image img {
     width: 100%;
+    height: 500px;
     border-radius: 8px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 /* Reset and base styles */
 * {
@@ -362,12 +384,16 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
 }
-
+.container3 {
+    max-width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
 /* Mission & Vision Section */
 .mission-vision {
     padding: 4rem 0;
+    background-color: rgb(28, 24, 24);
 }
 
 .vision-section, .mission-section {
@@ -384,6 +410,7 @@ body {
 .vision-text p, .mission-text p {
     font-size: 1.25rem;
     line-height: 1.8;
+    color:white;
 }
 
 .statue-image, .mission-image {
@@ -407,7 +434,7 @@ body {
 }
 
 .mission-text p{
-    color: #111827;
+    color: white;
 }
 
 
@@ -424,6 +451,7 @@ body {
     
     .vision-text p, .mission-text p {
         font-size: 1.1rem;
+        color:white;
     }
 }
 
@@ -434,4 +462,82 @@ body {
 
 .statue-image:hover, .mission-image:hover {
     transform: scale(1.05);
+}
+.studio-section {
+    padding: 2rem 1rem;
+    background-color: white;
+}
+
+.studio-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.studio-heading {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+.studio-content {
+    max-width: 100%;
+}
+
+.studio-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    color: #4b5563;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 480px) {
+    .studio-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .studio-heading {
+        font-size: 2.5rem;
+    }
+
+    .studio-text {
+        font-size: 1.425rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .studio-section {
+        padding: 4rem 2rem;
+    }
+
+    .studio-container {
+        max-width: 720px;
+    }
+
+    .studio-heading {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .studio-container {
+        max-width: 960px;
+    }
+
+    .studio-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .studio-container {
+        max-width: 1200px;
+    }
 }

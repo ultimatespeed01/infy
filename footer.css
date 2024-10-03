@@ -2,11 +2,11 @@
 .footer {
   background-color: black;
   color: white;
-  padding: 4rem 0; /* 16 */
+  padding: 2rem; /* Reduced from 4rem to 2rem */
   z-index: 50;
 }
 
-.container {
+.container2 {
   max-width: 1200px; /* You can adjust this width as needed */
   margin: 0 auto;
   padding: 0 1rem; /* 4 */
@@ -15,19 +15,19 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr; /* Default for mobile */
-  gap: 3rem; /* 12 */
+  gap: 2rem; /* Reduced gap from 3rem to 2rem */
 }
 
 /* Media Queries for responsive design */
 @media (min-width: 768px) { /* md */
   .grid {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) { /* lg */
   .grid {
-      grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -38,7 +38,7 @@
 }
 
 .nav-link {
-  font-size: 1.5rem; /* 2xl */
+  font-size: 1.25rem; /* Reduced from 1.5rem for smaller text */
   color: white;
   text-decoration: none;
   transition: color 0.3s;
@@ -52,9 +52,9 @@
 .studio-title,
 .contact-title,
 .email-title {
-  font-size: 1.25rem; /* text-xl */
+  font-size: 1.125rem; /* Reduced from 1.25rem */
   font-weight: 600; /* font-semibold */
-  margin-bottom: 1rem; /* mb-4 */
+  margin-bottom: 0.75rem; /* Reduced margin */
 }
 
 .studio-location {
@@ -76,19 +76,26 @@
 
 /* Bottom Section */
 .bottom-section {
-  margin-top: 4rem; /* mt-16 */
-  padding-top: 2rem; /* pt-8 */
+  margin-top: 2rem; /* Reduced margin from 4rem */
   border-top: 1px solid gray; /* border-t border-gray-800 */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) { /* md */
+  .bottom-section {
+    flex-direction: row; /* Horizontal layout on larger screens */
+    justify-content: space-between;
+  }
 }
 
 /* Social Icons */
 .social-icons {
   display: flex;
-  gap: 1rem; /* space-x-4 */
-  margin-bottom: 1rem; /* mb-4 md:mb-0 */
+  gap: 0.75rem; /* Reduced gap from 1rem */
+  margin-bottom: 0.75rem; /* Reduced from 1rem */
 }
 
 .social-link {
@@ -103,4 +110,6 @@
 /* Copyright */
 .copyright {
   color: gray; /* text-gray-400 */
+  text-align: center; /* Center text on mobile */
+  margin-top: 0.5rem; /* Reduced margin */
 }

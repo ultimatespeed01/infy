@@ -12,7 +12,7 @@ function loadNavbar() {
   </head>
   <body>
     <nav role="navigation">
-    <img id="logoIcon"src="images/logo.png" alt="Logo" />
+    <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo" /></>
       <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -21,7 +21,7 @@ function loadNavbar() {
         <ul id="menu">
           <a href="index.html"><li>Home</li></a>
           <a href="service.html"><li>Service</li></a>
-          <a href="contact"><li>Contact</li></a>
+          <a href="contact.html"><li>Contact</li></a>
         </ul>
       </div>
     </nav>

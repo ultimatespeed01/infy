@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Infy Contact</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="cursor.css">
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;  /* This prevents horizontal scrolling */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        .form-container {
+            width: 100%;
+            max-width: fit-content;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.0rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: normal;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            font-size: 0.7rem;
+            background-color: transparent;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .name-email-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem; /* Space between the two input fields */
+        }
+        .name-email-container input {
+            width: 100%; /* Each input will take half of the container's width */
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        button {
+            background-color: #6200ee;
+            color: white;
+            border: none;
+            padding: 0.5rem 1.25rem; /* Reduced button size */
+            font-size: 0.7rem; /* Reduced button text size */
+            cursor: pointer;
+            border-radius: 20px;
+            margin-top: 1rem; /* Move the button down a bit */
+            /* You can adjust button size here if needed */
+        }
+        .disclaimer {
+            font-size: 0.7rem; /* Reduced disclaimer text size */
+            color: #666;
+            margin-top: 1rem; /* Added space above disclaimer */
+        }
+        .contact-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+        .down-arrow {
+            margin-top: 1rem; 
+            margin-bottom: 1rem; 
+            width: 30px;
+            height: 30px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .down-arrow::after {
+            content: '↓';
+            font-size: 20px;
+        }
+        .confirmation-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #6200ee;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .confirmation-popup button {
+            background-color: white;
+            color: #6200ee;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="container">
+        <div class="contact-text">CONTACT</div>
+        
+        <h1>Get in touch!</h1>
+        <div class="down-arrow"></div> 
+        <h3>Let's Talk</h3>
+        
+        <form id="contact-form" action="https://formspree.io/f/mdknqvqn" method="POST">
+            <div class="name-email-container">
+                <input type="text" name="name" placeholder="WHAT'S YOUR NAME" required>
+                <input type="email" name="email" placeholder="YOUR EMAIL" required>
+            </div>
+            <input type="tel" name="phone" placeholder="YOUR CONTACT NUMBER" pattern="[0-9]+" inputmode="numeric" title="Please enter a valid phone number" required>
+            <textarea name="message" placeholder="WHAT WOULD YOU LIKE TO TALK ABOUT?" required></textarea>
+            <p class="disclaimer">* We promise not to disclose your personal information to third parties.</p>
+            <div class="button-container">
+                <button type="submit">SEND MESSAGE</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="confirmation-popup" id="confirmation-popup">
+        <p>Your message has been sent successfully!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        // Handle form submission
+        const form = document.getElementById('contact-form');
+        const popup = document.getElementById('confirmation-popup');
+
+        form.addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            // Gather form data
+            const formData = new FormData(form);
+
+            try {
+                // Send form data to Formspree
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    form.reset(); // Clear the form fields
+                    popup.style.display = 'block'; // Show confirmation popup
+                } else {
+                    alert('Oops! There was a problem submitting your form.');
+                }
+            } catch (error) {
+                alert('Oops! There was an error.');
+            }
+        });
+
+        // Close the confirmation popup
+        function closePopup() {
+            popup.style.display = 'none';
+        }
+    </script>
+            <div id="footer-container"></div>
+
+            <script src="footerloader.js"></script> <!-- Load the JavaScript file -->
+            <script src="nav.js"></script>
+</body>
+</html>
