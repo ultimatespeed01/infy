@@ -200,11 +200,11 @@ header p {
 }
 
 .studio-image img {
-    width: 1000px;
+    width: auto;
     height: 800px;
     border-radius: 8px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    margin-left: 400px;
+    margin-left: 100px;
 }
 
 /* Services section */

@@ -3,12 +3,14 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: linear-gradient(45deg, rgba(255, 0, 122, 0.7), rgba(0, 212, 255, 0.7), rgba(0, 255, 133, 0.7), rgba(255, 204, 0, 0.7)); /* Adjusted for semi-transparency */
+    background-color:rgba(70, 0, 128, 0.29);
     pointer-events: none; /* Prevent the cursor from blocking interactions */
-    transition: transform 0.2s ease; /* Slow down cursor movement */
-    z-index: 50;
+    transition: background-color 0.5s;
+    z-index: 10;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
+
+
 
 @keyframes sparkle {
     0% {
