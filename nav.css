@@ -144,7 +144,6 @@
   width: auto; /* Adjust width to maintain aspect ratio */
   src: url("images/logo.png");
   alt: "Logo";
-  display: block;
   position: relative;
   top: 15px;
   left: 10px;
