@@ -17,12 +17,39 @@
 
         }
     </style>
+    <style>
+        .discuss {
+          margin-left: 1400px; /* Default value for large screens */
+          margin-top: -60px;
+        }
+      
+        /* Adjust the margin for screens smaller than 768px */
+        @media (max-width: 768px) {
+          .discuss {
+            margin-left: 10%;
+            margin-top: 150px;
+          }
+        }
+      
+        /* Adjust the margin for screens smaller than 480px (e.g., small phones) */
+        @media (max-width: 480px) {
+          .discuss {
+            margin-left: 100px;
+            margin-top: -50px;
+          }
+        }
+      </style>
+    
+      
+    
 </head>
 <body>
     <div class="cursor " id="cursor"></div>
 
     <nav role="navigation">
         <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo"/></a>
+        <div class="discuss"><button class="button button-secondary">DISCUSS A PROJECT</button></div>
+
           <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
@@ -62,7 +89,6 @@
             </a>
             <a href="contact.html">
 
-                <button class="button button-secondary">DISCUSS A PROJECT</button>
             </a>
 
             </div>
