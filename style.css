@@ -15,14 +15,16 @@ body {
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Container */
 .container {
     margin: 0 auto;
     padding: 48px 16px;
     max-width: 1200px;
 }
-
-
 
 /* Header styles */
 header {
@@ -86,6 +88,7 @@ header p {
     cursor: pointer;
     border: none;
     font-size: 16px;
+    transition: box-shadow 0.3s ease;
 }
 
 .button-primary {
@@ -99,6 +102,24 @@ header p {
     color: white;
     margin-left: 25px;
 
+}
+
+.button-secondary:hover {
+    box-shadow: 0 0 20px 5px rgba(73, 73, 73, 0.8); /* Purple glow */
+}
+
+.button-primary:hover {
+    box-shadow: 0 0 20px 5px rgba(128, 0, 128, 0.8); /* Purple glow */
+}
+
+@media (max-width: 768px) {
+    .button-primary {
+        font-size: 0.9rem; /* Adjust size for smaller screens if needed */
+        padding: 8px 16px;
+    }
+    .button-primary:hover {
+        box-shadow: 0 0 20px 5px rgba(138, 43, 226, 0.8); /* Ensure glow stays */
+    }
 }
 
 /* Video background */
@@ -260,9 +281,9 @@ header p {
     border-radius: 8px;
     transition: all 0.3s;
     cursor: pointer;
-    height: 200px;
     display: flex;
     flex-direction: column;
+    height: auto; /* Let the height adjust based on content */
 }
 
 .service-card:hover {
@@ -286,7 +307,6 @@ header p {
 .service-card:hover .card-description {
     opacity: 1;
 }
-/* ... (previous CSS remains the same) ... */
 
 /* Services button container */
 .services-button-container {
