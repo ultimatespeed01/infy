@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <title>INFY - Our Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <title>INFY - Our Services</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1bdaa017ad.js" crossorigin="anonymous"></script>
     <style>
         body, html {
             margin: 0;
@@ -37,9 +40,7 @@
             border-radius: 20px;
             text-decoration: none;
         }
-        .menu-icon {
-            font-size: 24px;
-        }
+
         h1 {
             font-size: 36px;
             font-weight: normal;
@@ -77,38 +78,12 @@
         .tools-section {
             margin-top: 60px;
         }
-        footer {
-            margin-top: 60px;
-            text-align: center;
-        }
-        .footer-logo {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .social-links a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .footer-nav {
-            margin-top: 20px;
-        }
-        .footer-nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
+        
     </style>
 </head>
 <body>
     <nav role="navigation">
         <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo"/></a>
-        <a href="contact.html"><div class="discuss"><button class="button button-secondary">DISCUSS A PROJECT</button></div></a>
-        <video autoplay loop muted class="video-background">
-            <source src="images/background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
           <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
@@ -123,13 +98,13 @@
         </nav>
     <div class="container">
         <header>
-            <div class="logo">Infy</div>
             <a href="#" class="cta-button">Book a free call</a>
         </header>
         <main>
-            <h1>At INFY, we transform chaos into order, offering top-notch branding and marketing services tailored to your unique needs.</h1>
+            <h1>We transform chaos into order, offering top-notch branding and marketing services tailored to your unique needs.</h1>
             <div class="services-list">
                 <h3>Our expertise</h3>
+                <br>
                 <div class="service-item" onclick="toggleService(this)">
                     <h2>Website Design and Development</h2>
                     <span class="expand-icon">+</span>
@@ -218,7 +193,7 @@
         <div class="footer-content">
             <div class="footer-left">
                 <div class="logo">
-                    <img src="images/logo.png" alt="Kaleido Studios Logo" style="width: auto; height: 200px; margin-left: -100px; margin-top: -200px;">
+                    <img src="images/logo.png" alt="Kaleido Studios Logo" style="position: relative; width: auto; height: 200px; margin-left: -100px; margin-top: -200px;">
                 </div>
             </div>
             <nav class="footer-nav">
