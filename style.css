@@ -1,6 +1,9 @@
 /* Base styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
+@font-face {
+    font-family: "h1";
+    src: url(fonts/LibreBaskerville-Bold.ttf) format("truetype");
+  }
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -9,6 +12,18 @@ body {
     background-color: black;
     color: white;
 }
+.logo {
+    height: 150px;
+    width: auto; /* Adjust width to maintain aspect ratio */
+    src: url("images/logo.png");
+    alt: "Logo";
+  
+    position: relative;
+    top: 110px;
+    left: 10px;
+    
+    z-index: 1;
+  }
 
 header a {
     display: inline-block; /* Ensure links only take up the space of their content */
@@ -39,17 +54,33 @@ header {
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-size: 0.25rem;
     margin-left: 15px;
     margin-top: 64px;  
     font-weight: bold;
+   font-family:h1;
 }
 h2 {
-    font-size: 1.25rem;
+    font-size: 3.25rem;
     margin-left: 15px;
     margin-top: -60px;  
     font-weight: bold;
 }
+h6{
+    font-size: 0.75rem;
+    color: #4b5563;
+    margin-left: 880px;
+    margin-top: 50px;
+
+}
+hr{
+    width: 400px;
+    margin-left: 990px;
+    margin-top: -77px;
+    display: block;
+    border: 0;
+    border-top: 0.2px solid rgb(56, 51, 51);
+    }
 p{
         font-size: 1.25rem;
         margin-left: 15px;
@@ -60,10 +91,14 @@ p{
 
 @media (min-width: 768px) {
     h1 {
-        font-size: 8.75rem;
+        font-size: 6.75rem;
+        font-family:h1;
+        margin-bottom: 30px;
+
     }
     h2 {
-        font-size: 3.75rem;
+        font-size: 2.75rem;
+        font-family:h1;
     }
 }
 
@@ -86,6 +121,13 @@ header p {
     gap: 16px;
     margin-bottom: 48px;
 }
+.circle{
+    margin-left: 1000px;
+    height: 50px;
+    width: auto;
+    margin-top: -40px;
+}
+
 
 .button {
     padding: 12px 24px;
@@ -105,7 +147,7 @@ header p {
 }
 
 .button-secondary {
-    background-color: #1f2937;
+    background-color:#7e22ce;
     color: white;
     margin-left: 25px;
 
@@ -324,12 +366,14 @@ header p {
 
 .mission-vision {
     background-color: white;
+    
 }
 
 
 /* Vision section */
 .vision-section {
     margin-top: 64px;
+    font-family: h1;
 }
 
 .vision-icon {
@@ -421,6 +465,7 @@ body {
 .mission-vision {
     padding: 4rem 0;
     background-color: rgb(28, 24, 24);
+    font-family: h1;
 }
 
 .vision-section, .mission-section {

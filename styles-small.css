@@ -1,0 +1,100 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;  /* This prevents horizontal scrolling */
+
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 1.5rem;
+        margin: 1rem 1rem 0.5rem;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+        margin: 0 1rem 0.5rem;
+        font-weight: bold;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin: 0 1rem 1rem;
+        line-height: 1.4;
+    }
+
+    /* Remove absolute positioning */
+    h6 {
+        font-size: 0.9rem;
+        color: #4b5563;
+        margin-left:180px;
+    }
+    
+    hr {
+        width: 60px;
+        margin-left: 310px;
+        margin-top: -25px;
+        border: 0;
+        border-top: 0.2px solid gray;
+    }
+    
+    /* Buttons */
+    .button-primary,
+    .button-secondary {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 1rem;
+        display: inline-block;
+        width: auto;
+        text-align: center;
+    }
+    
+    .button-primary:hover {
+        box-shadow: 0 0 15px 3px rgba(138, 43, 226, 0.6);
+    }
+    
+    /* Layout sections */
+    .studio-section,
+    .vision-section,
+    .mission-section {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .studio-content {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .statue-image,
+    .mission-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .vision-text,
+    .mission-text {
+        text-align: left;
+    }
+    
+    .vision-text p,
+    .mission-text p {
+        font-size: 1rem;
+    }
+}

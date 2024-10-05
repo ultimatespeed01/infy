@@ -3,7 +3,7 @@
     {
     display: block;
     position: relative;
-    top: -35px;
+    top: -75px;
     left: calc(100% - 50px);
     
     z-index: 1;
@@ -140,7 +140,7 @@
  }
 
  #logoIcon {
-  height: 80px;
+  height: 100px;
   width: auto; /* Adjust width to maintain aspect ratio */
   src: url("images/logo.png");
   alt: "Logo";

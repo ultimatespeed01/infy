@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1bdaa017ad.js" crossorigin="anonymous"></script>
+    <title>Kaleido Studios Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f0f0f0;
+        }
+
+        .footer {
+            background: #000;
+            color: white;
+            padding: 80px 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-left {
+            max-width: 400px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .newsletter p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .email-form {
+            display: flex;
+            background: #1A1A1A;
+            border-radius: 40px;
+            max-width: 380px;
+            height: 56px;
+            align-items: center;
+        }
+
+        .email-form input {
+            flex: 1;
+            padding: 0 20px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .email-form input::placeholder {
+            color: #666;
+        }
+
+        .email-form button {
+            background: #7B3FE4;
+            border: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 4px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            margin-bottom: 20px;
+            margin-left: 400px;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .social-links {
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .social-links a {
+            color: #666;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .info-section h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .info-section p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .copyright {
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-nav {
+                margin-top: 40px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .info-section {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Kaleido Studios Logo">
+                    <span class="logo-text">INFY</span>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="contact-grid">
+                <div class="info-section">
+                    <h3>Studio</h3>
+                    <p>40(2Y), 4th floor, 59th Cross Rd, 3rd Block, Rajajinagar, Bengaluru, Karnataka 560010</p>
+                </div>
+                <div class="info-section">
+                    <h3>Call/Whatsapp</h3>
+                    <p>+919620029735</p>
+                </div>
+                <div class="info-section">
+                    <h3>Email</h3>
+                    <p>hello@infydigisolutions.com</p>
+                </div>
+                <div class="copyright">
+                    <p>© 2024 INFY  Studios. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
