@@ -12,6 +12,12 @@ body {
     background-color: black;
     color: white;
 }
+.tiger{
+    width: auto;
+    height: 80px; 
+    margin-top: 100px; 
+    margin-left: 280px;
+}
 .logo {
     height: 150px;
     width: auto; /* Adjust width to maintain aspect ratio */
@@ -54,10 +60,11 @@ h1 {
    font-family:h1;
 }
 h2 {
-    font-size: 3.25rem;
-    margin-left: 15px;
-    margin-top: -60px;  
+    font-size: 20px;
+    margin-left: 380px;
+    margin-top: -25px;  
     font-weight: bold;
+    font-family:h1;
 }
 h6{
     font-size: 0.75rem;
@@ -88,10 +95,6 @@ p{
         font-family:h1;
         margin-bottom: 30px;
 
-    }
-    h2 {
-        font-size: 2.75rem;
-        font-family:h1;
     }
 }
 
@@ -287,12 +290,12 @@ header p {
 .services-title {
     font-size: 2.25rem;
     font-weight: 300;
+    margin-top: -100px;
+    margin-left: 500px;
 }
 
 @media (min-width: 768px) {
-    .services-title {
-        font-size: 3.75rem;
-    }
+
 }
 
 .services-title span {

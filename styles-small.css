@@ -1,4 +1,8 @@
 /* Base styles */
+@font-face {
+    font-family: "h1";
+    src: url(fonts/LibreBaskerville-Bold.ttf) format("truetype");
+  }
 body {
     margin: 0;
     padding: 0;
@@ -11,16 +15,34 @@ body {
 /* Responsive design for small screens */
 @media (max-width: 768px) {
     /* Typography */
+
+    .services-title {
+        font-weight: 300;
+        font-size:25px; 
+        display: inline; 
+        margin-bottom: 100px;
+        margin-left: 10px;
+        font-family:h1;
+
+    }
+    .tiger{
+        height: 100px;
+        width: auto;
+        margin-left: 30px;
+        margin-bottom: 50px;
+
+    }
     h1 {
-        font-size: 1.5rem;
-        margin: 1rem 1rem 0.5rem;
+        font-size: 0.5rem;
         font-weight: bold;
+        font-family:h1;
     }
     
     h2 {
-        font-size: 1.25rem;
+        font-size:15px; 
         margin: 0 1rem 0.5rem;
         font-weight: bold;
+        margin-left: 10px;
     }
     
     p {
@@ -33,15 +55,17 @@ body {
     h6 {
         font-size: 0.9rem;
         color: #4b5563;
-        margin-left:180px;
+        margin-left:150px;
     }
     
     hr {
-        width: 60px;
-        margin-left: 310px;
-        margin-top: -25px;
+        width: 90px;
+        margin-left: 280px;
+        margin-top: -85px;
         border: 0;
         border-top: 0.2px solid gray;
+        margin-bottom: 50px;
+
     }
     
     /* Buttons */
