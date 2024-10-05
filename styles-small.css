@@ -69,20 +69,33 @@ body {
     }
     
     /* Buttons */
-    .button-primary,
-    .button-secondary {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-        margin: 0.5rem 1rem;
+    .button-primary{
+        font-size: 10px;
+        margin-top: 1px;
         display: inline-block;
         width: auto;
-        text-align: center;
+        text-align: justify;
+        height: 70px;
+        margin-left: 10px;
     }
-    
+    .button-secondary {
+        font-size: 10px;
+        margin-top: 345px;
+        display: inline-block;
+        width: auto;
+        text-align: justify;
+        height: 70px;
+        margin-left: 70px;
+    }
     .button-primary:hover {
         box-shadow: 0 0 15px 3px rgba(138, 43, 226, 0.6);
     }
-    
+    .services-button-container {
+                margin-top: 1px;
+        margin-left: -15px;
+        display: flex;
+        justify-content: center;
+    }
     /* Layout sections */
     .studio-section,
     .vision-section,
@@ -120,5 +133,65 @@ body {
     .vision-text p,
     .mission-text p {
         font-size: 1rem;
+    }
+    .arrow-icon {
+        margin-left: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: black;
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+    
+    .arrow-icon i {
+        color: #7e22ce; /* Change the arrow icon color to purple */
+        font-size: 18px; 
+    }
+    
+    /* Hover effect for the arrow icon */
+    .arrow-icon:hover {
+        transform: scale(1.1); /* Slightly increase size on hover */
+    }
+    
+    
+    
+    .icon-wrapper {
+        margin-left: 820px;
+        margin-top: -50;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 10px; /* Increased width for outer circle */
+        height: 10px; /* Increased height for outer circle */
+        border-radius: 50%; /* Outer circle */
+        background-color: #7e22ce; /* Black background */
+        position: relative; /* Position relative for inner circle */
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+    
+    .icon-wrapper:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px; /* Size of inner circle */
+        height: 10px; /* Size of inner circle */
+        border-radius: 50%; /* Inner circle */
+        background-color: black; /* Purple background */
+        transform: translate(-50%, -50%); /* Center the inner circle */
+        z-index: 1; /* Position inner circle below the icon */
+    }
+    
+    .icon-wrapper i {
+        color: #7e22ce; /* Change the arrow icon color to white for contrast */
+        z-index: 2; /* Position the icon above the inner circle */
+    }
+    
+    /* Hover effect for the arrow icon */
+    .icon-wrapper:hover {
+        transform: scale(1.1); /* Slightly increase size on hover */
     }
 }

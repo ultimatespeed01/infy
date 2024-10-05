@@ -146,6 +146,9 @@ header p {
     background-color:#7e22ce;
     color: white;
     margin-left: 25px;
+    margin-top: -10px;
+    height: 80px;
+    width: auto;
 
 }
 
@@ -612,7 +615,7 @@ body {
 }
 .slider-carousel {
     width: 100%;
-    height: 250%;
+    height: 150%;
     overflow: hidden;
     padding: 20px 0;
     background-color: rgb(0, 0, 0);
@@ -630,9 +633,70 @@ body {
 }
 .slider img {
     max-width: 120px;
-    max-height: 40px;
+    max-height: 90px;
 }
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+}
+
+.arrow-icon {
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.arrow-icon i {
+    color: #7e22ce; /* Change the arrow icon color to purple */
+    font-size: 24px; 
+}
+
+/* Hover effect for the arrow icon */
+.arrow-icon:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+
+.icon-wrapper {
+    margin-left: 820px;
+    margin-top: -50;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Increased width for outer circle */
+    height: 100px; /* Increased height for outer circle */
+    border-radius: 50%; /* Outer circle */
+    background-color: #7e22ce; /* Black background */
+    position: relative; /* Position relative for inner circle */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.icon-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px; /* Size of inner circle */
+    height: 50px; /* Size of inner circle */
+    border-radius: 50%; /* Inner circle */
+    background-color: black; /* Purple background */
+    transform: translate(-50%, -50%); /* Center the inner circle */
+    z-index: 1; /* Position inner circle below the icon */
+}
+
+.icon-wrapper i {
+    color: #7e22ce; /* Change the arrow icon color to white for contrast */
+    z-index: 2; /* Position the icon above the inner circle */
+}
+
+/* Hover effect for the arrow icon */
+.icon-wrapper:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
 }
