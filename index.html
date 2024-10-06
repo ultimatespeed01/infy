@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="cursor.css">
     <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="preloader.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
@@ -70,7 +71,7 @@
 </head>
 <body>
     <div class="cursor " id="cursor"></div>
-
+    <div class="loader" id="loader"></div>
     <nav role="navigation">
         <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo"/></a>
         <a href="contact.html">
@@ -626,6 +627,7 @@ const cursor = document.getElementById('cursor');
               targetSection.scrollIntoView({ behavior: 'smooth' });
           });
           </script>
+  <script src="preloader.js"></script>
 
 </body>
 </html>
