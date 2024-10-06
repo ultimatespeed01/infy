@@ -618,7 +618,7 @@ body {
     height: 150%;
     overflow: hidden;
     padding: 20px 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255 255 255);
 }
 .slider-container {
     display: flex;
