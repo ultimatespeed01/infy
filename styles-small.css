@@ -1,7 +1,10 @@
-/* Base styles */
 @font-face {
-    font-family: "h1";
-    src: url(fonts/LibreBaskerville-Bold.ttf) format("truetype");
+    font-family: "libre";
+    src: url(fonts/libre.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "playfair";
+    src: url(fonts/playfair.ttf) format("truetype");
   }
 body {
     margin: 0;
@@ -18,11 +21,11 @@ body {
 
     .services-title {
         font-weight: 300;
-        font-size:25px; 
-        display: inline; 
-        margin-bottom: 100px;
+        font-size:29px; 
+        margin-top: 20px;
+        margin-bottom: 10px;
         margin-left: 10px;
-        font-family:h1;
+        font-family:libre;
 
     }
     .tiger{
@@ -33,22 +36,25 @@ body {
 
     }
     h1 {
-        font-size: 2.2rem;
+        font-size: 40px;
         font-weight: bold;
-        font-family:h1;
+        font-family:libre;
     }
     
     h2 {
-        font-size:18px; 
-        margin: 0 1rem 0.5rem;
-        font-weight: bold;
+        font-size: 20px;
         margin-left: 10px;
+        margin-top: -5px;  
+        font-weight: bold;
+        font-family:libre;
+
     }
     
     p {
-        font-size: 1rem;
+        font-size: 2rem;
         margin: 0 1rem 1rem;
         line-height: 1.4;
+        font-family:playfair;
     }
 
     /* Remove absolute positioning */
@@ -56,6 +62,7 @@ body {
         font-size: 0.9rem;
         color: #4b5563;
         margin-left:150px;
+        font-family:playfair;
     }
     
     hr {
@@ -70,22 +77,23 @@ body {
     
     /* Buttons */
     .button-primary{
-        font-size: 10px;
-        margin-top: 1px;
-        display: inline-block;
+        background-color: #7e22ce;
+        color: white;
+        margin-left: 5px;
+        font-size: 15px;
+        height: 50px;
         width: auto;
-        text-align: justify;
-        height: 70px;
-        margin-left: 10px;
+        font-family:playfair;
     }
     .button-secondary {
-        font-size: 10px;
-        margin-top: 345px;
-        display: inline-block;
+        background-color: #7e22ce;
+        color: white;
+        margin-left: 75px;
+        font-size: 15px;
+        height: 50px;
         width: auto;
-        text-align: justify;
-        height: 70px;
-        margin-left: 70px;
+        margin-top: 345px;
+        font-family:playfair;
     }
     .button-primary:hover {
         box-shadow: 0 0 15px 3px rgba(138, 43, 226, 0.6);
@@ -133,6 +141,7 @@ body {
     .vision-text p,
     .mission-text p {
         font-size: 1rem;
+        font-family:playfair;
     }
     .arrow-icon {
         margin-left: 20px;
@@ -195,3 +204,206 @@ body {
         transform: scale(1.1); /* Slightly increase size on hover */
     }
 }
+@media (min-width: 322px) {
+     /* Typography */
+     .service-card:hover {
+        transform: scale(1.1);
+        background-color: #111827;
+        border-style: solid;
+        border-radius: 1px;
+        border-color: #333;
+     }
+     .card-description {
+        color: #9ca3af;
+        font-size:20px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+     .services-title {
+        font-weight: 300;
+        font-size:22px; 
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 1  0px;
+        font-family:libre;
+
+    }
+    .tiger{
+        height: 100px;
+        width: auto;
+        margin-left: 10px;
+        margin-bottom: 50px;
+
+    }
+    h1 {
+        font-size: 35px;
+        font-weight: bold;
+        font-family:libre;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: -5px;  
+        font-weight: bold;
+        font-family:libre;
+
+    }
+
+    p {
+        font-size: 2rem;
+        margin: 0 1rem 1rem;
+        line-height: 1.4;
+        font-family:playfair;
+    }
+
+    /* Remove absolute positioning */
+    h6 {
+        font-size: 0.9rem;
+        color: #4b5563;
+        margin-left:130px;
+        font-family:playfair;
+    }
+    
+    hr {
+        width: 90px;
+        margin-left: 280px;
+        margin-top: -85px;
+        border: 0;
+        border-top: 0.2px solid gray;
+        margin-bottom: 50px;
+
+    }
+    
+    /* Buttons */
+    .button-primary{
+        background-color: #7e22ce;
+        color: white;
+        margin-left: 5px;
+        font-size: 15px;
+        height: 50px;
+        width: auto;
+        font-family:playfair;
+    }
+    .button-secondary {
+        background-color: #7e22ce;
+        color: white;
+        margin-left: 75px;
+        font-size: 15px;
+        height: 50px;
+        width: auto;
+        margin-top: 338px;
+        font-family:playfair;
+    }
+    .button-primary:hover {
+        box-shadow: 0 0 15px 3px rgba(138, 43, 226, 0.6);
+    }
+    .services-button-container {
+                margin-top: 1px;
+        margin-left: -15px;
+        display: flex;
+        justify-content: center;
+    }
+    /* Layout sections */
+    .studio-section,
+    .vision-section,
+    .mission-section {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .studio-content {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .statue-image,
+    .mission-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .vision-text,
+    .mission-text {
+        text-align: left;
+    }
+    
+    .vision-text p,
+    .mission-text p {
+        font-size: 1rem;
+        font-family:playfair;
+    }
+    .arrow-icon {
+        margin-left: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: black;
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+    
+    .arrow-icon i {
+        color: #7e22ce; /* Change the arrow icon color to purple */
+        font-size: 18px; 
+    }
+    
+    /* Hover effect for the arrow icon */
+    .arrow-icon:hover {
+        transform: scale(1.1); /* Slightly increase size on hover */
+    }
+    
+    
+    
+    .icon-wrapper {
+        margin-left: 820px;
+        margin-top: -50;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 10px; /* Increased width for outer circle */
+        height: 10px; /* Increased height for outer circle */
+        border-radius: 50%; /* Outer circle */
+        background-color: #7e22ce; /* Black background */
+        position: relative; /* Position relative for inner circle */
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+    
+    .icon-wrapper:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px; /* Size of inner circle */
+        height: 10px; /* Size of inner circle */
+        border-radius: 50%; /* Inner circle */
+        background-color: black; /* Purple background */
+        transform: translate(-50%, -50%); /* Center the inner circle */
+        z-index: 1; /* Position inner circle below the icon */
+    }
+    
+    .icon-wrapper i {
+        color: #7e22ce; /* Change the arrow icon color to white for contrast */
+        z-index: 2; /* Position the icon above the inner circle */
+    }
+    
+    /* Hover effect for the arrow icon */
+    .icon-wrapper:hover {
+        transform: scale(1.1); /* Slightly increase size on hover */
+    }
+}
+
+
