@@ -516,15 +516,17 @@ body {
 
 .statue-image, .mission-image {
     flex: 0 0 300px;
+    margin-right: -150px;
+    margin-top: -90px;
+
 }
 
 .statue-image img {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
 }
 
 .mission-image {
-    background-color: black; /* Red background for the mission image */
     padding: 1rem;
 }
 
