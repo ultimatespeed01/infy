@@ -137,13 +137,27 @@
             border-radius: 25px;
             cursor: pointer;
         }
+        .cta-button {
+    position: relative;  /* Ensures it's positioned relative to the nearest positioned ancestor */
+    z-index: 10;
+    background-color: #7e22ce;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    top: 7%;  /* Adjust as needed to control vertical position */
+    left: 80%;  /* Adjust as needed to control horizontal position */
+    transform: translate(-50%, -50%); /* Center the button */
+}
+
     </style>
 </head>
 <body>
+    <a href="contact.html" class="cta-button">Discuss a Project</a>
+
     <nav role="navigation">
-        <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo"/></a>
-        
-          <div id="menuToggle">
+        <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo" style="z-index: 10;"/></a> 
+          <div id="menuToggle"> 
             <input type="checkbox" />
             <span></span>
             <span></span>
@@ -153,13 +167,17 @@
               <a href="service.html"><li>Service</li></a>
               <a href="contact.html"><li>Contact</li></a>
             </ul>
+                
+            <div class="video-wrapper">
+                <!-- animated header background -->
+                <img src="images/background.gif" alt="Animated background" class="gif-background" style="height: 140px; width: 1500px; margin-left: -1450px; margin-top: -80px; z-index: -1;">
+            </div>
           </div>
         </nav>
     <div class="container">
-        <div class="contact-text">CONTACT</div>
+        <div class="contact-text">THANK YOU FOR VISITING</div>
         
         <h1>Get in touch!</h1>
-        <div class="down-arrow"></div> 
         <h3>Let's Talk</h3>
         
         <form id="contact-form" action="https://formspree.io/f/mdknqvqn" method="POST">
