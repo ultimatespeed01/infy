@@ -5,7 +5,7 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-    transition: opacity 1.9s ease, visibility 0s 2s; /* Smooth fade-out over 2.5s */
+    transition: opacity 0.9s ease, visibility 0s 2s; /* Smooth fade-out over 2.5s */
     opacity: 1; /* Initially fully visible */
     visibility: visible; /* Ensure it's visible initially */
 }
