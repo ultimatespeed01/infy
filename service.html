@@ -40,7 +40,7 @@
             text-decoration: none;
             margin-top: -350px;
             z-index: 10;
-            margin-left: 990px;
+            margin-left: 950px;
         }
 
         h1 {
@@ -80,7 +80,66 @@
         .tools-section {
             margin-top: 60px;
         }
-        
+        .arrow-icon {
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.arrow-icon i {
+    color: #7e22ce; /* Change the arrow icon color to purple */
+    font-size: 15px; 
+}
+
+/* Hover effect for the arrow icon */
+.arrow-icon:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+
+.icon-wrapper {
+    margin-left: 820px;
+    margin-top: -120;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Increased width for outer circle */
+    height: 80px; /* Increased height for outer circle */
+    border-radius: 80%; /* Outer circle */
+    background-color: #7e22ce; /* Black background */
+    position: relative; /* Position relative for inner circle */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.icon-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 5  0%;
+    left: 50%;
+    width: 50px; /* Size of inner circle */
+    height: 50px; /* Size of inner circle */
+    border-radius: 50%; /* Inner circle */
+    background-color: black; /* Purple background */
+    transform: translate(-50%, -50%); /* Center the inner circle */
+    z-index: 1; /* Position inner circle below the icon */
+}
+
+.icon-wrapper i {
+    color: #7e22ce; /* Change the arrow icon color to white for contrast */
+    z-index: 2; /* Position the icon above the inner circle */
+}
+
+/* Hover effect for the arrow icon */
+.icon-wrapper:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
     </style>
 </head>
 <body>
@@ -105,7 +164,11 @@
         </nav>
     <div class="container">
         <header>
-            <a href="contact.html" class="cta-button">Discuss a Project</a>
+            <a href="contact.html" class="cta-button">Discuss a Project
+                <span class="arrow-icon">
+                    <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
         </header>
         <main>
             <h1>We transform chaos into order, offering top-notch branding and marketing services tailored to your unique needs.</h1>

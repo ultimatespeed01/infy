@@ -145,19 +145,83 @@
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
-    top: 7%;  /* Adjust as needed to control vertical position */
+    top: 8%;  /* Adjust as needed to control vertical position */
     left: 80%;  /* Adjust as needed to control horizontal position */
     transform: translate(-50%, -50%); /* Center the button */
+}
+.arrow-icon {
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.arrow-icon i {
+    color: #7e22ce; /* Change the arrow icon color to purple */
+    font-size: 15px; 
+}
+
+/* Hover effect for the arrow icon */
+.arrow-icon:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+
+.icon-wrapper {
+    margin-left: 820px;
+    margin-top: -120;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Increased width for outer circle */
+    height: 80px; /* Increased height for outer circle */
+    border-radius: 80%; /* Outer circle */
+    background-color: #7e22ce; /* Black background */
+    position: relative; /* Position relative for inner circle */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.icon-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px; /* Size of inner circle */
+    height: 50px; /* Size of inner circle */
+    border-radius: 50%; /* Inner circle */
+    background-color: black; /* Purple background */
+    transform: translate(-50%, -50%); /* Center the inner circle */
+    z-index: 1; /* Position inner circle below the icon */
+}
+
+.icon-wrapper i {
+    color: #7e22ce; /* Change the arrow icon color to white for contrast */
+    z-index: 2; /* Position the icon above the inner circle */
+}
+
+/* Hover effect for the arrow icon */
+.icon-wrapper:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
 }
 
     </style>
 </head>
 <body>
-    <a href="contact.html" class="cta-button">Discuss a Project</a>
+    <a href="contact.html" class="cta-button">Discuss a Project
+        <span class="arrow-icon">
+            <i class="fas fa-arrow-right"></i>
+        </span>
+    </a>
 
     <nav role="navigation">
         <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo" style="z-index: 10;"/></a> 
-          <div id="menuToggle"> 
+          <div id="menuToggle" style="margin-top: 4px;"> 
             <input type="checkbox" />
             <span></span>
             <span></span>
@@ -170,7 +234,7 @@
                 
             <div class="video-wrapper">
                 <!-- animated header background -->
-                <img src="images/background.gif" alt="Animated background" class="gif-background" style="height: 540px; width: 1950px; margin-left: -1850px; margin-top: -450px; z-index: -1;">
+                <img src="images/background.gif" alt="Animated background" class="gif-background" style="height: 540px; width: 1950px; margin-left: -1850px; margin-top: -480px; z-index: -1;">
             </div>
           </div>
         </nav>
