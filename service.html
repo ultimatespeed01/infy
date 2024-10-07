@@ -33,11 +33,14 @@
             font-weight: bold;
         }
         .cta-button {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: #7e22ce;
             color: #fff;
             padding: 10px 20px;
             border-radius: 20px;
             text-decoration: none;
+            margin-top: -350px;
+            z-index: 10;
+            margin-left: 990px;
         }
 
         h1 {
@@ -82,8 +85,8 @@
 </head>
 <body>
     <nav role="navigation">
-        <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo"/></a>
-          <div id="menuToggle">
+        <a href="index.html"><img id="logoIcon"src="images/logo.png" alt="Logo" style="z-index: 10;"/></a> 
+          <div id="menuToggle"> 
             <input type="checkbox" />
             <span></span>
             <span></span>
@@ -93,6 +96,11 @@
               <a href="service.html"><li>Service</li></a>
               <a href="contact.html"><li>Contact</li></a>
             </ul>
+                
+            <div class="video-wrapper">
+                <!-- animated header background -->
+                <img src="images/background.gif" alt="Animated background" class="gif-background" style="height: 120px; width: 1500px; margin-left: -1400px; margin-top: -70px; z-index: 1;">
+            </div>
           </div>
         </nav>
     <div class="container">

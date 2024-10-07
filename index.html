@@ -119,7 +119,7 @@
         data-aos-once="false">
             <div class="button-container">
             <a href="service.html">
-                <button class="button button-primary">Explore More 
+                <button class="button button-primary">EXPLORE MORE 
                     <span class="arrow-icon">
                         <i class="fas fa-arrow-right"></i>
                     </span>
@@ -136,7 +136,7 @@
         </main>
     </div>
 
-    <section class="studio-section">
+    <section class="studio-section" id="studio-section">
         <div class="studio-content">
             <div class="studio-logo">
                 <div  data-aos="zoom-in-up" data-aos-delay="50"
@@ -196,15 +196,13 @@
                 <div class="h2-title"><h2>to transform your bussiness.</h2></div>
             </div><br>
             <div class="services-button-container">
-                <button class="button button-primary" data-aos="zoom-in-down" data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false">Explore More
-                <span class="arrow-icon">
-                    <i class="fas fa-arrow-right"></i>
-                </span>
-            </button>
+              <a href="service.html">
+                <button class="button button-primary">EXPLORE MORE 
+                    <span class="arrow-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </button>
+            </a>
             </div>
             <div style="margin-bottom: 200px;"></div>
             <div class="services-grid">
@@ -615,7 +613,7 @@ const cursor = document.getElementById('cursor');
               cursor.style.left = `${e.pageX}px`;
               cursor.style.top = `${e.pageY}px`;
           });
-          
+
           // Smooth scrolling for explore link
           document.querySelector('.link-explore').addEventListener('click', function(event) {
               event.preventDefault(); // Prevent default anchor click behavior
